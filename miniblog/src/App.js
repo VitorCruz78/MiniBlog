@@ -9,7 +9,7 @@ import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 //pages
 import { Login } from './pages/Login/Login';
-import { Register } from './pages/Login/Register/Register';
+import { Register } from './pages/Register/Register';
 
 function App() {
   return (
