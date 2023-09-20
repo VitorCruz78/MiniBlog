@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import styles from './Register.module.css'
 
 
-export function Register() {
+export default function Register() {
 
     const [displayName, setDisplayName] = useState('')
     const [email, setEmail] = useState('')
