@@ -1,9 +1,10 @@
+//CSS
 import styles from './Search.module.css'
 //hooks
 import React from "react";
+import { Link } from 'react-router-dom';
 import { useFetchDocuments } from '../../hooks/useFetchDocuments';
 import { useQuery } from '../../hooks/useQuery';
-import { Link } from 'react-router-dom';
 //components
 import { PostDetail } from '../../components/PostDetail';
 
@@ -19,7 +20,7 @@ export default function Search() {
             <div>
                 {posts && posts.length === 0 && (
                     <div className={styles.noposts}>
-                        <p>Não foram encontrados posts a partit da sua busca...</p>
+                        <p>Não foram encontrados posts a partir da sua busca...</p>
                         <Link to="/" className='btn btn-dark'>Voltar</Link>
                     </div>
                 )}

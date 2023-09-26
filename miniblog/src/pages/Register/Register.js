@@ -1,8 +1,8 @@
+//CSS
+import styles from './Register.module.css'
+//hooks
 import { useAuthentication } from '../../hooks/useAuthentication'
 import { useState, useEffect } from 'react'
-
-import styles from './Register.module.css'
-
 
 export default function Register() {
 
@@ -24,7 +24,7 @@ export default function Register() {
             password
         }
 
-        if (password != confirmPassword) {
+        if (password !== confirmPassword) {
             setError("As senhas precisam ser iguais!")
             return
         }

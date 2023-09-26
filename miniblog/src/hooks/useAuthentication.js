@@ -1,13 +1,8 @@
-import { db } from '../firebase/config'
-
+//firebase
 import {
-    getAuth,
-    createUserWithEmailAndPassword,
-    signInWithEmailAndPassword,
-    updateProfile,
-    signOut
+    getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut
 } from 'firebase/auth'
-
+//hooks
 import { useState, useEffect } from 'react'
 
 export function useAuthentication() {
@@ -76,7 +71,6 @@ export function useAuthentication() {
     }
 
     // login - sign in
-
     async function login(data) {
 
         checkIfIsCancelled()

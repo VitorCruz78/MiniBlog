@@ -1,5 +1,5 @@
+//CSS
 import styles from './CreatePost.module.css'
-
 //hooks
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'

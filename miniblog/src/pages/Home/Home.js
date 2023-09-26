@@ -1,11 +1,9 @@
 //CSS
 import styles from './Home.module.css'
-
 //hooks
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { useFetchDocuments } from '../../hooks/useFetchDocuments'
-
 //components
 import { PostDetail } from '../../components/PostDetail'
 
@@ -22,6 +20,7 @@ export default function Home() {
             return navigate(`/search?q=${query}`)
         }
     }
+
     return (
         <div className={styles.home}>
             <h1>Veja os nossos posts mais recentes</h1>
